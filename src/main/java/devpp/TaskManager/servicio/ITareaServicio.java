@@ -8,7 +8,9 @@ public interface ITareaServicio {
 
     List<Tarea> listarTareas();
 
-    void guardarTarea(Tarea tarea);
+    Tarea listarTareaPorId(Integer idTarea);
+
+    Tarea guardarTarea(Tarea tarea);
 
     void eliminarTarea(Integer idTarea);
 

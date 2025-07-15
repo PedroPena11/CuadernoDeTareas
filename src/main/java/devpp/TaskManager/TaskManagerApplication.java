@@ -1,5 +1,6 @@
 package devpp.TaskManager;
 
+import devpp.TaskManager.modelo.Tarea;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

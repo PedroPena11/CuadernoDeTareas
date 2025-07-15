@@ -21,10 +21,14 @@ public class TareaServicio implements ITareaServicio{
         return tareaRepositorio.findAll();
     }
 
-    @Override
-    public void guardarTarea(Tarea tarea) {
-        tareaRepositorio.save(tarea);
+    public Tarea listarTareaPorId(Integer idTarea){
+        return tareaRepositorio.findById(idTarea).orElse(null);
+    }
 
+
+    @Override
+    public Tarea guardarTarea(Tarea tarea) {
+        return tareaRepositorio.save(tarea);
     }
 
     @Override
