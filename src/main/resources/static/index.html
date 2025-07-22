@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="decorative-pin" ></div>
+            <h1>Mi cuaderno de tareas</h1>
+            <p>Organiza tus ideas y pendientes en este cuaderno digital.</p>
+        
+    </header>
+    <div class="main-container" >
+        <div class="lista-todos">
+            <ul id="lista-tareas" >
+                <h2>Mis tareas</h2>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consectetur elit nec nisl laoreet, eu feugiat nunc vestibulum. Ut sit amet varius lectus, non placerat nunc.</li>
+                <li> Mauris a enim ut diam malesuada lobortis. Aenean fringilla ante ac metus finibus tristique fringilla in nisl. Integer congue porta nisl,</li>
+                <li>Elemento 3</li>
+                <li>Elemento 3</li>
+                <li>Elemento 3</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+        <div class="right-panel" >
+        <form id="tarea-form">
+            <h2>Agregar tarea</h2>
+            <label for="title">Titulo:</label>
+            <input type="text" id="title" required>
+            <br><br>
+            <label for="description">Descripcion:</label>
+            <textarea type="text" id="description" ></textarea>
+            <br><br>
+            <button type="submit">Guardar tarea</button>
+        </form>
+        <div id="caja-conteo" >
+            <h2>Resumen de tareas</h2>
+            <p>Completadas: <span id="conteo-completadas" >0</span></p>
+            <p>Incompletas: <span id="conteo-nocompletadas" >0</span></p>
+        </div>
+        </div>
+    </div>
+
+
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/tareas")
+@CrossOrigin(origins = "http://localhost:8080")
 public class TareaControlador {
     @Autowired
     private ITareaServicio iTareaServicio;
@@ -45,9 +46,13 @@ public class TareaControlador {
     public ResponseEntity<Tarea> marcarCompletado(@PathVariable Integer id){
         if(iTareaServicio.listarTareaPorId(id)!=null){
             Tarea tarea = iTareaServicio.listarTareaPorId(id);
-            tarea.setCompletado("true");
+            if(tarea.getCompletado().equals("true")){
+                tarea.setCompletado("false");
+            }else if(tarea.getCompletado().equals("false")){
+                tarea.setCompletado("true");
+            }
             Tarea tareaActualizada = iTareaServicio.guardarTarea(tarea);
-            return ResponseEntity.ok(tarea);
+            return ResponseEntity.ok(tareaActualizada);
         }else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
