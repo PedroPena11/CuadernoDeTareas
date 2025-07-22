@@ -1,0 +1,282 @@
+body{
+    background-color:#f2f0ec;
+}
+
+.app-header{
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f2f0ec;
+    border: 1px solid #d4d0c8;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 40px 0; 
+    border-color: transparent #d4d0c8 transparent transparent; 
+    box-shadow: -2px 2px 2px rgba(0,0,0,0.1); 
+    z-index: 1; 
+}
+
+.app-header h1 {
+    font-family: 'Gloria Hallelujah', cursive; 
+    font-size: 3em; 
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1); 
+}
+
+.app-header p {
+    font-family: 'Handlee', cursive; 
+    font-size: 1.2em;
+    color: #666;
+    margin: 0;
+}
+
+.decorative-pin{
+    position:absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25px;
+    height: 25px;
+    background-color: #8b0000;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    z-index: 2;
+}
+
+.main-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:20px;
+    margin-top:20px
+}
+
+.right-panel{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    flex:1;
+    max-width:400px;
+}
+
+.lista-todos{
+    background-color:#f2f0ec;
+    border:1px solid #d4d0c8;;
+    padding:20px;
+    margin-top:20px;
+    box-shadow:3px 3px 5px rgba(0,0,0,0.1);
+    width:80%;
+    flex:1;
+    list-style-type: none;
+    max-height: 400px;
+    overflow-y: auto;
+    
+}
+
+#caja-conteo{
+    background-color:#f2f0ec;
+    border:1px solid #d4d0c8;
+    border-radius:5px;
+    padding:20px;
+    box-shadow:3px 2px 5px rgba(0, 0, 0, 0.1);
+    width:100%;
+}
+
+#caja-conteo h2{
+    font-family:'Gloria Hallelujah',cursive;
+    margin-top:0;
+    margin-bottom:15px;
+    color:#333;
+}
+
+#caja-conteo p{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+#caja-conteo span {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+.lista-todos li{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding:8px 15px;
+    border-bottom:1px dashed #ccc;
+    margin-bottom:5px;
+    position:relative;
+    
+    
+}
+.lista-todos h2{
+    font-family:'Gloria Hallelujah',cursive;
+    text-align: center;
+    text-decoration: underline dashed #a52019;
+}
+
+.lista-todos li span{
+    font-family: 'Gloria Hallelujah', cursive;
+    flex-grow: 1; 
+    margin-right: 10px; 
+    word-break: break-word; 
+}
+
+.lista-todos li::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    border-left: 2px solid #e2a0a0;
+}
+
+.contenedor-centrar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#tarea-form {
+    background-color: #f2f0ec;
+    border: 1px solid #d4d0c8;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 400px;
+}
+
+#tarea-form h2,
+#tarea-form label{
+   font-family: 'sans-serif',cursive;
+}
+
+
+#tarea-form input,
+#tarea-form textarea,
+#tarea-form button {
+    width: 100%;
+    padding: 8px;
+    padding-right:1px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+     font-family: 'sans-serif',cursive;
+}
+
+#tarea-form button {
+    background-color: #a52019;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+
+#tarea-form input:hover,
+#tarea-form textarea:hover {
+    border-color: #e2a0a0;
+}
+
+#tarea-form input:focus,
+#tarea-form textarea:focus {
+    border-color: #e2a0a0;
+    outline:none;
+    box-shadow: 0 0 5px #e2a0a0;
+}
+
+.delete-btn {
+    background-color: transparent; 
+    color: #e2a0a0; 
+    border: 1px solid #e2a0a0; 
+    margin-left: 10px; 
+}
+
+.delete-btn:hover {
+    background-color: #e2a0a0; 
+    color: white; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transform: translateY(-1px); 
+}
+
+.delete-btn:active {
+    background-color: #c08080; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(0); 
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px; 
+    margin-left: auto; 
+    flex-shrink: 0; 
+}
+
+.complete-btn,
+.delete-btn{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    flex-shrink: 0;
+}
+
+.complete-btn {
+    background-color: transparent; 
+    color: #4CAF50; 
+    border: 1px solid #4CAF50;
+}
+
+
+.complete-btn:hover {
+    background-color: #4CAF50; 
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.completed .complete-btn {
+    background-color: #4CAF50;
+    color: white; 
+    border: 1px solid #4CAF50;
+}
+
+
+.completed .complete-btn:hover {
+    background-color: #3e8e41; 
+    transform: translateY(-1px);
+}
+
+
+.completed .complete-btn::before {
+    content: '✓ ';
+}
+
+
+
+
