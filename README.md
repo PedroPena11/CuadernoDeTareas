@@ -7,11 +7,11 @@ Este proyecto fue desarrollado con un **backend en Java (Spring Boot)** y un **f
 
 ✨ Características Principales
 
-**Creación de Tareas**: Añade nuevas tareas con un título y una descripción.
-**Listado de Tareas**: Visualiza todas tus tareas en una lista estilizada como un cuaderno de notas.
-**Gestión de Estado**: Marca tareas como completadas o deshaz esta acción.
-**Eliminación de Tareas**: Elimina tareas que ya no necesitas.
-**Estilo "Cuaderno"**: Diseño visual único que simula un cuaderno con tipografía de escritura a mano y detalles decorativos.
+* **Creación de Tareas**: Añade nuevas tareas con un título y una descripción.
+* **Listado de Tareas**: Visualiza todas tus tareas en una lista estilizada como un cuaderno de notas.
+* **Gestión de Estado**: Marca tareas como completadas o deshaz esta acción.
+* **Eliminación de Tareas**: Elimina tareas que ya no necesitas.
+* **Estilo "Cuaderno"**: Diseño visual único que simula un cuaderno con tipografía de escritura a mano y detalles decorativos.
 
 
 🛠️ Tecnologías Utilizadas
