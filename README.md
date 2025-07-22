@@ -17,12 +17,12 @@ Este proyecto fue desarrollado con un **backend en Java (Spring Boot)** y un **f
 🛠️ Tecnologías Utilizadas
 
 Backend
-Java 21: El lenguaje de programación principal.
-Spring Boot: Framework para construir el servidor RESTful de manera rápida y sencilla.
-Spring Data JPA: Para la gestión de datos y la conexión con la base de datos.
+* Java 21: El lenguaje de programación principal.
+* Spring Boot: Framework para construir el servidor RESTful de manera rápida y sencilla.
+* Spring Data JPA: Para la gestión de datos y la conexión con la base de datos.
 
 Frontend
-HTML5: Estructura de la interfaz de usuario.
-CSS: Estilos personalizados para el diseño "Cuaderno" y animaciones.
-JavaScript: Lógica del lado del cliente para interactuar con la API REST.
-Axios o Fetch API: Para realizar las peticiones HTTP (POST, GET, PUT, DELETE).
+* HTML5: Estructura de la interfaz de usuario.
+* CSS: Estilos personalizados para el diseño "Cuaderno" y animaciones.
+* JavaScript: Lógica del lado del cliente para interactuar con la API REST.
+* Axios o Fetch API: Para realizar las peticiones HTTP (POST, GET, PUT, DELETE).
